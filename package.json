@@ -1,0 +1,20 @@
+{
+	"name": "ts3-solar-lp",
+	"module": "index.ts",
+	"type": "module",
+	"scripts": {
+		"dev": "@tailwindcss/cli -i ./public/in.css -o ./src/out.css --watch",
+		"build": "bun build public/index.html --outdir=dist"
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@tailwindcss/cli": "^4.0.2",
+		"tailwindcss": "^4.0.2"
+	}
+}
