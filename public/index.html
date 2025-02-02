@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="assets/css/out.css">
     <title>TS3 Solar</title>
 </head>
-<body class="w-full min-h-full antialiased font-sans">
+<body class="w-full min-h-full antialiased font-sans overflow-x-hidden">
     <header class="w-full">
         <nav>
             <h2 class="">Logo</h2>
@@ -15,66 +15,117 @@
     </header>
 
 
-        <main class="mx-auto">
+        <main class="w-full mx-auto">
             <!-- hero section -->
             <section class="w-full px-12">
-                <div class="mx-auto  flex items-center justify-between pt-24 pb-16 ">
-                    <h1 class="text-[64px] font-bold w-[650px] ">Leading the Bio Energy Revolution"</h1>
-                    <p class="w-[400px] text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse nostrum voluptatem repudiandae pariatur nemo sed, voluptatum similique quam distinctio vero illum nesciunt eius dignissimos blanditiis, animi voluptates, quaerat laudantium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, odit. Voluptas natus nisi, laudantium aut provident eos sequi, quisquam iure impedit ratione praesentium amet reiciendis voluptate veritatis est necessitatibus placeat!</p>
+                <div class="mx-auto  flex items-center justify-between pt-24 pb-16 relative">
+                    <h1 class="text-[64px] font-bold w-[650px] text-[#3C3B3B]">Leading the Bio Energy Revolution"</h1>
+                    <p class="w-[400px] text-xs font-semibold text-[#3C3B3B] absolute left-[75%] top-50 leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse nostrum voluptatem repudiandae pariatur nemo sed, voluptatum similique quam distinctio vero illum nesciunt eius dignissimos blanditiis, animi voluptates, quaerat laudantium! Lorem ipsum dolor sit.</p>
                 </div>
-                <img src="assets/img/hero-image-2.svg" height="600" class="object-cover h-[600px] w-full px-4 rounded-md hero-image" alt="hero photo">
+
+
+                <img src="assets/img/hero-image-2.svg" height="600" class="object-cover h-[600px] w-full rounded-2xl" alt="hero photo">
             </section>
         
             <!-- brand section -->
-            <section class="flex items-center justify-around mx-auto gap-16 py-12 w-full mt-[80px] border-t border-b border-[#e2e2e2] mb-56">
+            <div class="flex items-center justify-around mx-auto gap-16 py-12 w-full mt-[80px] border-t border-b border-[#e2e2e2] mb-56 h-[300px]">
                 <img src="assets/img/vivensis-logo.svg" alt="vivensis tecnology">
                 <img src="assets/img/sky-logo.svg" alt="sky tv">
                 <img src="assets/img/intelbras-logo.svg" alt="intelbras">
-            </section>
+            </div>
             <!-- about section -->
             <section class="bg-[#F5F5F5] w-full py-[84px] px-12 pb-56">
-                <h2 class="text-5xl font-bold w-[550px] mx-auto text-center leading-16">Trusted service, <span class="text-[#009C39]">for your various needs</span></h2>
+                <h2 class="text-5xl font-bold w-[550px] mx-auto text-center leading-16 text-[#3C3B3B]">Trusted service, <span class="text-[#009C39]">for your various needs</span></h2>
         
                 <div>
                     <!-- fazer aqui a lógica dos carrossel andando -->
                 </div>
                 <div class="flex gap-12 mt-[110px] px-4">
-                    <div class="bg-white flex flex-col gap-6 p-8">
-                        <span class="font-bold, text-sm font-bold text-[#009C39]">01</span>
-                        <h3 class="text-4xl">Solar panel for home.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet, rerum sequi animi quisquam ipsa amet perspiciatis molestiae atque quod ut praesentium porro architecto a? Cum ab aliquam repellendus vero!</p>
+                    <div class="bg-white flex flex-col gap-8 p-8">
+                        <span class="font-bold text-[#009C39] text-[18px]">01</span>
+                        <h3 class="text-4xl text-[#3C3B3B]">Solar panel for home.</h3>
+                        <p class="text-[#737171]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet, rerum sequi animi quisquam ipsa amet perspiciatis molestiae atque quod ut praesentium porro architecto a? Cum ab aliquam repellendus vero!</p>
                     </div>
-                    <div class="bg-white flex flex-col gap-6 p-8">
-                        <span class="font-bold, text-sm font-bold text-[#009C39]">01</span>
-                        <h3 class="text-4xl">Solar panel for home.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet, rerum sequi animi quisquam ipsa amet perspiciatis molestiae atque quod ut praesentium porro architecto a? Cum ab aliquam repellendus vero!</p>
+                    <div class="bg-white flex flex-col gap-8 p-8">
+                        <span class="font-bold text-[#009C39] text-[18px]">01</span>
+                        <h3 class="text-4xl text-[#3C3B3B]">Solar panel for home.</h3>
+                        <p class="text-[#737171]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet, rerum sequi animi quisquam ipsa amet perspiciatis molestiae atque quod ut praesentium porro architecto a? Cum ab aliquam repellendus vero!</p>
                     </div>
-                    <div class="bg-white flex flex-col gap-6 p-8">
-                        <span class="font-bold, text-sm font-bold text-[#009C39]">01</span>
-                        <h3 class="text-4xl">Solar panel for home.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet, rerum sequi animi quisquam ipsa amet perspiciatis molestiae atque quod ut praesentium porro architecto a? Cum ab aliquam repellendus vero!</p>
+                    <div class="bg-white flex flex-col gap-8 p-8">
+                        <span class="text-[18px] font-bold text-[#009C39]">01</span>
+                        <h3 class="text-4xl text-[#3C3B3B]">Solar panel for home.</h3>
+                        
+                        <p class="text-[#737171]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet, rerum sequi animi quisquam ipsa amet perspiciatis molestiae atque quod ut praesentium porro architecto a? Cum ab aliquam repellendus vero!</p>
                     </div>
                 </div>
             </section>
             <!-- solar plate section -->
-            <section class="w-full solar-plate-section gap-12 py-16 px-12 flex">
-                <div class="flex-1">
-                    <h2 class="text-5xl font-semibold mb-12">Lorem Ipsum</h2>
-                    <div class="space-y-[32px]">
-                        <p class="w-[400px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet enim vitae natus nam possimus non dicta at, eos quos eum maiores eveniet est asperiores temporibus. Nam reiciendis nihil vel quia?</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit reiciendis ipsam odio ratione ab? Alias, doloremque! Quidem cumque numquam fugiat ut repellat porro cupiditate nam nihil doloribus, mollitia a quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit culpa consequatur dolore ad. Libero dolorem repellat eos impedit perferendis neque a sapiente molestias omnis quaerat, blanditiis, assumenda itaque quisquam. Quas?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quisquam ullam praesentium velit in nulla corrupti magnam non minima. Fugit quas voluptatibus nam nesciunt esse distinctio eum consequatur assumenda dolor?</p>
+            <section class="gap-12 flex text-[#3C3B3B] py-12 px-8  solar-plate-section">
+                    <div class="flex-1">
+                        <h2 class="text-5xl font-semibold mb-6">Lorem Ipsum</h2>
+                        <div class="space-y-[24px]">
+                            <p class="w-[700px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet enim vitae natus nam possimus non dicta at, eos quos eum maiores eveniet est asperiores temporibus. Nam reiciendis nihil vel quia?</p>
+                            <p class="w-[700px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit reiciendis ipsam odio ratione ab? Alias, doloremque! Quidem cumque numquam fugiat ut repellat porro cupiditate nam nihil doloribus, mollitia a quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit culpa consequatur dolore ad. Libero dolorem repellat eos impedit perferendis neque a sapiente molestias omnis quaerat, blanditiis, assumenda itaque quisquam. Quas?</p>
+                            <p class="w-[700px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quisquam ullam praesentium velit in nulla corrupti magnam non minima. Fugit quas voluptatibus nam nesciunt esse distinctio eum consequatur assumenda dolor?</p>
+                        </div>
+                        <div class="w-[600px] grid grid-cols-2 gap-8 mt-[48px]">
+                            <div class="flex flex-col justify-between border border-[#3C3B3B] rounded-[10px] h-[220px]">
+                                <img src="assets/img/hero-image-2.svg" alt="produto" class="w-full rounded-t-[10px]">
+                                <div class="w-full h-8 flex items-center text-dark-green font-bold px-2.5 bg-[#3C3B3B] z-20 rounded-b-[10px]">
+                                    <span class="text-[#79CE9F]">R$ 20,00</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-between border border-[#3C3B3B] rounded-[10px] h-[220px]">
+                                <img src="assets/img/hero-image-2.svg" alt="produto" class="w-full rounded-t-[10px]">
+                                <div class="w-full h-8 flex items-center text-dark-green font-bold px-2.5 bg-[#3C3B3B] z-20 rounded-b-[10px]">
+                                    <span class="text-[#79CE9F]">R$ 20,00</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-between border border-[#3C3B3B] rounded-[10px] h-[220px]">
+                                <img src="assets/img/hero-image-2.svg" alt="produto" class="w-full rounded-t-[10px]">
+                                <div class="w-full h-8 flex items-center text-dark-green font-bold px-2.5 bg-[#3C3B3B] z-20 rounded-b-[10px]">
+                                    <span class="text-[#79CE9F]">R$ 20,00</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-between border border-[#3C3B3B] rounded-[10px] h-[220px]">
+                                <img src="assets/img/hero-image-2.svg" alt="produto" class="w-full rounded-t-[10px]">
+                                <div class="w-full h-8 flex items-center text-dark-green font-bold px-2.5 bg-[#3C3B3B] z-20 rounded-b-[10px]">
+                                    <span class="text-[#79CE9F]">R$ 20,00</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-1 items-center">
-                    <img src="assets/img/solar-plate-photo.svg" width="600" class="w-[600px]" alt="placa solar">
-                </div>
+                    <div class="flex flex-1 items-center">
+                        <img src="assets/img/solar-plate-photo.svg" class="w-[700px] mx-auto" alt="placa solar">
+                    </div>
             </section>
+
             <!-- location section -->
-            <section></section>
+            <section class="mt-12 px-8 space-y-6 text-[#3C3B3B]">
+                <h2 class="text-5xl font-bold">Bom dia</h2>
+
+                <p class="w-[700px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum earum animi neque minima officia cupiditate nemo nihil, illo ab vitae quae, quia praesentium numquam qui eveniet tempore? Impedit, culpa a!</p>
+                
+                <ul class="space-y-2">
+                    <li class="flex gap-2 text-[#737171]">
+                        <img src="assets/img/list-check.svg" alt="list check">
+                        Atendemos na Paraíba, em Recife e no Rio Grande do Norte
+                    </li>
+                    <li class="flex gap-2 text-[#737171]">
+                        <img src="assets/img/list-check.svg" alt="list check">
+                        Atendemos na Paraíba, em Recife e no Rio Grande do Norte
+                    </li>
+                    <li class="flex gap-2 text-[#737171]">
+                        <img src="assets/img/list-check.svg" alt="list check">
+                        Atendemos na Paraíba, em Recife e no Rio Grande do Norte
+                    </li>
+                </ul>
+            </section>
+
             <!-- footer -->
             <section></section>
         </main>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
