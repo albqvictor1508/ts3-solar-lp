@@ -8,7 +8,7 @@ import solarPlatePhoto from "./assets/solar-plate-photo.svg"
 import listCheck from "./assets/list-check.svg"
 import frenteTS3 from "./assets/ts3-images/frente-ts3.jpg"
 
-import Swiper from "swiper"
+import Swiper from "swiper/react"
 
 
 export function App() {
