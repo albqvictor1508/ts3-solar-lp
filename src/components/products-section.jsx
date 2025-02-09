@@ -16,7 +16,7 @@ export function ProductsSection() {
 		},
 		{
 			id: "2",
-			text: "msr",
+			text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ametenim vitae natus nam possimus non dicta at, eos quos eum maioreseveniet est asperiores temporibus. Nam reiciendis nihil velquia?",
 			img: <img src={cameraMiboPhoto} alt="" />,
 		},
 		{

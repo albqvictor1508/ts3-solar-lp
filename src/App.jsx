@@ -7,6 +7,7 @@ import imagemTeto from "./assets/ts3-images/imagem-teto.png";
 import listCheck from "./assets/list-check.svg";
 import frenteTS3 from "./assets/ts3-images/frente-ts3.jpg";
 import { ProductsSection } from "./components/products-section";
+import { ClientsCard } from "./components/clients-card";
 
 export function App() {
 	return (
@@ -93,29 +94,8 @@ export function App() {
 					id="about-section"
 					className="bg-gray-100 w-full py-12 px-12 pb-56 flex flex-col space-y-12"
 				>
-					<div className="w-[1280px] mx-auto">
-						<h2 className="text-4xl font-bold w-[550px] mx-auto text-center leading-12 text-[#3C3B3B]">
-							Trusted service,{" "}
-							<span className="text-[#009C39]">for your various needs</span>
-						</h2>
-					</div>
-					<div className="flex gap-12 transition-all animate-none clients-container">
-						<div className="flex-1 clients-card">
-							<img src="" className="rounded-xl shadow" alt="" />
-						</div>
-						<div className="flex-1 clients-card">
-							<img src={isabelCliente01} className="rounded-xl" alt="" />
-						</div>
-						<div className="clients-card">
-							<img src={isabelCliente02} className="rounded-xl shadow" alt="" />
-						</div>
-						<div className="clients-card">
-							<img src={isabelCliente03} className="rounded-xl shadow" alt="" />
-						</div>
-						<div className="clients-card">
-							<img src={imagemTeto} className="rounded-xl shadow" alt="" />
-						</div>
-					</div>
+					<ClientsCard />
+
 					<div className="w-[1280px] mx-auto">
 						<div className="flex gap-12 px-4">
 							<div className="bg-white flex flex-col gap-8 p-8">
@@ -159,7 +139,6 @@ export function App() {
 					</div>
 				</section>
 
-				{/* solar plate section */}
 				<ProductsSection />
 
 				<section id="location-section" className="py-12  text-[#3C3B3B] mb-32">
