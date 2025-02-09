@@ -7,6 +7,7 @@ import imagemTeto from "./assets/ts3-images/imagem-teto.png";
 import solarPlatePhoto from "./assets/solar-plate-photo.svg";
 import listCheck from "./assets/list-check.svg";
 import frenteTS3 from "./assets/ts3-images/frente-ts3.jpg";
+import { TestSwiper } from "./test-swiper";
 
 export function App() {
 	return (
@@ -15,7 +16,7 @@ export function App() {
 				<nav className="w-full flex justify-between items-center rounded-xl px-8 py-2">
 					<img src="" alt="logo TS3" className="w-36" />
 					<div className="flex space-x-6 items-center">
-						<a href="#" className="">
+						<a href="#">
 							<button
 								className="items-center gap-2 border-2 border-[#3C3B3B] px-4 py-2 rounded-xl flex"
 								type="button"
@@ -43,6 +44,7 @@ export function App() {
 						<div className="w-full flex flex-col space-y-12 justify-center">
 							<h1 className="w-[600px] text-5xl font-bold text-[#3C3B3B] leading-14">
 								Cansado de pagar contas altíssimas de energia?
+								<TestSwiper />
 							</h1>
 							<p className="w-[600px] text-base text-[#737171] leading-6">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
@@ -158,86 +160,9 @@ export function App() {
 						</div>
 					</div>
 				</section>
-				<section id="solar-plate-section">
-					<div className="w-[1400px] mx-auto flex justify-between text-[#3C3B3B] py-16">
-						<div className="flex-1">
-							<h2 className="text-5xl font-semibold mb-6">Lorem Ipsum</h2>
-							<div className="space-y-6">
-								<p className="w-[600px]">
-									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-									enim vitae natus nam possimus non dicta at, eos quos eum
-									maiores eveniet est asperiores temporibus. Nam reiciendis
-									nihil vel quia?
-								</p>
-								<p className="w-[600px]">
-									Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-									Impedit reiciendis ipsam odio ratione ab? Alias, doloremque!
-									Quidem cumque numquam fugiat ut repellat porro cupiditate nam
-									nihil doloribus, mollitia a quaerat? Lorem ipsum dolor sit
-									amet consectetur adipisicing elit. Fugit culpa consequatur
-									dolore ad. Libero dolorem repellat eos impedit perferendis
-									neque a sapiente molestias omnis quaerat, blanditiis,
-									assumenda itaque quisquam. Quas?
-								</p>
-								<p className="w-[600px]">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Labore quisquam ullam praesentium velit in nulla corrupti
-									magnam non minima. Fugit quas voluptatibus nam nesciunt esse
-									distinctio eum consequatur assumenda dolor?
-								</p>
-							</div>
-							<div className="w-[600px] grid grid-cols-2 gap-8 mt-[48px]">
-								<div className="flex flex-col justify-between border border-[#3C3B3B] rounded-[10px] h-[220px]">
-									<img
-										src="public/img/sky-logo.svg"
-										alt="produto"
-										className="w-full rounded-t-[10px]"
-									/>
-									<div className="w-full h-8 flex items-center text-dark-green font-bold px-2.5 bg-[#3C3B3B] rounded-b-[10px]">
-										<span className="text-[#79CE9F]">R$ 20,00</span>
-									</div>
-								</div>
-								<div className="flex flex-col justify-between border border-[#3C3B3B] rounded-[10px] h-[220px]">
-									<img
-										src="public/img/sky-logo.svg"
-										alt="produto"
-										className="w-full rounded-t-[10px]"
-									/>
-									<div className="w-full h-8 flex items-center text-dark-green font-bold px-2.5 bg-[#3C3B3B] rounded-b-[10px]">
-										<span className="text-[#79CE9F]">R$ 20,00</span>
-									</div>
-								</div>
-								<div className="flex flex-col justify-between border border-[#3C3B3B] rounded-[10px] h-[220px]">
-									<img
-										src="public/img/sky-logo.svg"
-										alt="produto"
-										className="w-full rounded-t-[10px]"
-									/>
-									<div className="w-full h-8 flex items-center text-dark-green font-bold px-2.5 bg-[#3C3B3B] rounded-b-[10px]">
-										<span className="text-[#79CE9F]">R$ 20,00</span>
-									</div>
-								</div>
-								<div className="flex flex-col justify-between border border-[#3C3B3B] rounded-[10px] h-[220px]">
-									<img
-										src="public/img/sky-logo.svg"
-										alt="produto"
-										className="w-full rounded-t-[10px]"
-									/>
-									<div className="w-full h-8 flex items-center text-dark-green font-bold px-2.5 bg-[#3C3B3B] rounded-b-[10px]">
-										<span className="text-[#79CE9F]">R$ 20,00</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="flex flex-1 items-center">
-							<img
-								src={solarPlatePhoto}
-								className="w-[650px] mx-auto"
-								alt="placa solar"
-							/>
-						</div>
-					</div>
-				</section>
+
+				{/* solar plate section */}
+
 				<section id="location-section" className="py-12  text-[#3C3B3B] mb-32">
 					<div className="flex flex-col w-[1280px] mx-auto space-y-12">
 						<div>
