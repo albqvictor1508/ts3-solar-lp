@@ -4,10 +4,9 @@ import isabelCliente01 from "./assets/ts3-images/isabel-cliente-01.png";
 import isabelCliente02 from "./assets/ts3-images/isabel-cliente-02.png";
 import isabelCliente03 from "./assets/ts3-images/isabel-cliente-03.png";
 import imagemTeto from "./assets/ts3-images/imagem-teto.png";
-import solarPlatePhoto from "./assets/solar-plate-photo.svg";
 import listCheck from "./assets/list-check.svg";
 import frenteTS3 from "./assets/ts3-images/frente-ts3.jpg";
-import { TestSwiper } from "./test-swiper";
+import { ProductsSection } from "./components/products-section";
 
 export function App() {
 	return (
@@ -44,7 +43,6 @@ export function App() {
 						<div className="w-full flex flex-col space-y-12 justify-center">
 							<h1 className="w-[600px] text-5xl font-bold text-[#3C3B3B] leading-14">
 								Cansado de pagar contas altíssimas de energia?
-								<TestSwiper />
 							</h1>
 							<p className="w-[600px] text-base text-[#737171] leading-6">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
@@ -162,6 +160,7 @@ export function App() {
 				</section>
 
 				{/* solar plate section */}
+				<ProductsSection />
 
 				<section id="location-section" className="py-12  text-[#3C3B3B] mb-32">
 					<div className="flex flex-col w-[1280px] mx-auto space-y-12">
@@ -176,7 +175,11 @@ export function App() {
 						</div>
 
 						<div className="w-full flex justify-around">
-							<img src={frenteTS3} className="w-full h-[500px] rounded-2xl" />
+							<img
+								src={frenteTS3}
+								className="w-full h-[500px] rounded-2xl"
+								alt=""
+							/>
 						</div>
 						<div className="flex items-center gap-12">
 							<div className="flex-1 bg-gray-200">
@@ -210,7 +213,7 @@ export function App() {
 							/>
 						</div>
 						<div className="flex flex-col space-y-4">
-							<i className="bx bxl-instagram text-2xl font-bold text-[#3C3B3B]"></i>
+							<i className="bx bxl-instagram text-2xl font-bold text-[#3C3B3B]" />
 							<div className="flex gap-8 space-y-8">
 								<ul className="flex flex-col gap-4">
 									<li className="text-sm text-white font-bold">PRODUTO</li>
