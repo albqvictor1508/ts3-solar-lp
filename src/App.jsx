@@ -1,8 +1,17 @@
 import undrawPc from "./assets/undraw-pc.svg"
+import intelbrasLogo from "./assets/intelbras-logo.svg"
+import isabelCliente01 from "./assets/ts3-images/isabel-cliente-01.png"
+import isabelCliente02 from "./assets/ts3-images/isabel-cliente-02.png"
+import isabelCliente03 from "./assets/ts3-images/isabel-cliente-03.png"
+import imagemTeto from "./assets/ts3-images/imagem-teto.png"
+import solarPlatePhoto from "./assets/solar-plate-photo.svg"
+import listCheck from "./assets/list-check.svg"
+import frenteTS3 from "./assets/ts3-images/frente-ts3.jpg"
+
 
 export function App() {
     return(
-      <div>
+      <div className="overflow-x-hidden">
         <header className="w-full bg-white fixed border-b border-b-gray-300 z-20">
             <nav className="w-full flex justify-between items-center rounded-xl px-8 py-2">
                 <img src="" alt="logo TS3" className="w-36" />
@@ -45,7 +54,7 @@ export function App() {
                         <div className="w-[1280px] flex items-center justify-around mx-auto gap-16">
                             <img src="public/img/vivensis-logo.svg" alt="vivensis tecnology" />
                             <img src="public/img/sky-logo.svg" alt="sky tv" />
-                            <img src="public/img/intelbras-logo.svg" alt="intelbras" />
+                            <img src={intelbrasLogo} alt="intelbras" />
                         </div>
                     </div>
                 </section>
@@ -55,20 +64,20 @@ export function App() {
                         <h2 className="text-4xl font-bold w-[550px] mx-auto text-center leading-12 text-[#3C3B3B]">Trusted service, <span className="text-[#009C39]">for your various needs</span></h2>
                     </div>
                         <div className="flex gap-12 transition-all animate-none clients-container">
-                            <div className="clients-card">
+                            <div className="flex-1 clients-card">
                                 <img src="" className="rounded-xl shadow" alt="" />
                             </div>
-                            <div className="clients-card">
-                                <img src="public/img/ts3-images/20250125_092159_0000.png" className="rounded-xl" alt="" />
+                            <div className="flex-1 clients-card">
+                                <img src={isabelCliente01} className="rounded-xl" alt="" />
                             </div>
                             <div className="clients-card">
-                                <img src="public/img/ts3-images/20250125_092853_0000.png" className="rounded-xl shadow" alt="" />
+                                <img src={isabelCliente02} className="rounded-xl shadow" alt="" />
                             </div>
                             <div className="clients-card">
-                                <img src="public/img/ts3-images/20250125_092853_0000.png" className="rounded-xl shadow" alt="" />
+                                <img src={isabelCliente03} className="rounded-xl shadow" alt="" />
                             </div>
                             <div className="clients-card">
-                                <img src="public/img/ts3-images/20250125_092853_0000.png" className="rounded-xl shadow" alt="" />
+                                <img src={imagemTeto} className="rounded-xl shadow" alt="" />
                             </div>
                         </div>
                         <div className="w-[1280px] mx-auto">
@@ -129,7 +138,7 @@ export function App() {
                                 </div>
                             </div>
                             <div className="flex flex-1 items-center">
-                                <img src="public/img/solar-plate-photo.svg" className="w-[650px] mx-auto" alt="placa solar" />
+                                <img src={solarPlatePhoto} className="w-[650px] mx-auto" alt="placa solar" />
                             </div>
                         </div>
                 </section>
@@ -142,30 +151,31 @@ export function App() {
         
         
                         <div className="w-full flex justify-around">
-                            <img src="./img/hero-image-2.svg" height="500" className="object-cover w-full h-[400px] rounded-2xl" />
+                            <img src={frenteTS3} className="w-full h-[500px] rounded-2xl" />
                         </div>
                         <div className="flex items-center gap-12">
-                            <div className="flex-1">
-                                <img src="./img/hero-image-2.svg" alt="" className="object-cover w-full h-[400px] rounded-[10px]" />
+                            <div className="flex-1 bg-gray-200">
+                                {/* <img src="./img/hero-image-2.svg" alt="" className="object-cover w-full rounded-[10px]" /> */}
+                                foto do mapa
                             </div>
                             <ul className="space-y-2 mb-8 flex flex-col flex-1 gap-8">
                                 <li className="flex gap-2 text-[#737171] text-[18px]">
-                                    <img src="./img/list-check.svg" alt="list check" />
+                                    <img src={listCheck} alt="list check" />
                                     Atendemos na Paraíba, em Pernambuco e no Rio Grande do Norte
                                 </li>
                                 <li className="flex gap-2 text-[#737171] text-[18px]">
-                                    <img src="./img/list-check.svg" alt="list check" />
+                                    <img src={listCheck} alt="list check" />
                                     Possuímos serviço de qualidade aprovado pela região!
                                 </li>
                                 <li className="flex gap-2 text-[#737171] text-[18px]">
-                                    <img src="./img/list-check.svg" alt="list check" />
+                                    <img src={listCheck} alt="list check" />
                                     Atendemos na Paraíba, em Recife e no Rio Grande do Norte
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </section>
-                <footer className="">
+                <footer>
                     <div className="w-[1280px] mx-auto flex items-center justify-between py-20">
                         <div>
                             <img src="./img/ts3-solar-logo.svg" alt="ts3 solar logo" className="w-56 " />
