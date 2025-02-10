@@ -9,6 +9,15 @@ import { ProductsSection } from "./components/products-section";
 import { ClientsCard } from "./components/clients-card";
 
 export function App() {
+
+	const handleRedirectWhatsapp = () => {
+		const number = "558393759434";
+		const message = encodeURIComponent("Olá, gostaria de entrar em contato com alexsa!");
+		const whatsappLink = `https://wa.me/${number}?text=${message}`;
+
+		window.open(whatsappLink) //redirect to whatsapp
+	}
+
 	return (
 		<div className="overflow-x-hidden">
 			<header className="w-full bg-white fixed border-b border-b-gray-300 z-20">
@@ -30,6 +39,7 @@ export function App() {
 						<button
 							className="text-white bg-[#01AB55] px-4 py-2 rounded-xl font-bold text-base flex gap-2 items-center cursor-pointer"
 							type="button"
+							onClick={handleRedirectWhatsapp}
 						>
 							Contate-nos
 							<i className="bx bxl-whatsapp text-2xl font-bold" />
