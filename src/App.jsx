@@ -104,6 +104,29 @@ export function App() {
 					id="about-section"
 					className="bg-gray-100 w-full py-12 px-12 pb-56 flex flex-col space-y-12"
 				>
+					<div className="flex flex-col space-y-20">
+						<h2>Lorem ipsum</h2>
+						<h2>Porque adquirir energia solar?</h2>
+
+						<div id="cards">
+							{/* fazer esquema de cards ou nessa seção, ou na do carrossel */}
+							<div>
+								icon
+								title
+								text
+							</div>
+							<div>
+								icon
+								title
+								text
+							</div>
+							<div>
+								icon
+								title
+								text
+							</div>
+						</div>
+					</div>
 					<ClientsCard />
 
 					{/* mexer nessa seção inteira */}
@@ -166,11 +189,13 @@ export function App() {
 						</div>
 
 						<div className="w-full flex justify-around">
-							<img
-								src={frenteTS3}
-								className="w-full h-[500px] rounded-2xl"
-								alt=""
-							/>
+							<div className="h-[500px] overflow-hidden w-full">
+								<img
+									src={frenteTS3}
+									className="w-full h-full object-fill rounded-2xl "
+									alt=""
+								/>
+							</div>
 						</div>
 						<div className="flex items-center gap-12">
 							<div className="flex-1 bg-gray-200">

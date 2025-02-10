@@ -14,21 +14,27 @@ export function ClientsCard() {
 				children
 			>
 				<div className="w-full flex">
-					<img
-						src={isabelCliente01}
-						className="object-contain flex-1 h-[300px] rounded-2xl px px-4 "
-						alt=""
-					/>
-					<img
-						src={isabelCliente02}
-						className="object-contain flex-1 h-[300px] rounded-2xl px-4"
-						alt=""
-					/>
-					<img
-						src={isabelCliente03}
-						className="object-contain flex-1 h-[300px] rounded-md px-4"
-						alt=""
-					/>
+						<div className="min-w-[300px] h-[300px] overflow-hidden rounded-2xl mx-4">
+							<img
+								src={isabelCliente01}
+								className="object-cover w-full h-full"
+								alt=""
+							/>
+						</div>
+						<div className="min-w-[300px] h-[300px] overflow-hidden rounded-2xl mx-4">
+							<img
+								src={isabelCliente02}
+								className="object-cover w-full h-full"
+								alt=""
+							/>
+						</div>
+						<div className="min-w-[300px] h-[300px] overflow-hidden rounded-2xl mx-4">
+							<img
+								src={isabelCliente03}
+								className="object-cover w-full h-full"
+								alt=""
+							/>
+						</div>
 				</div>
 			</Marquee>
 		</div>
