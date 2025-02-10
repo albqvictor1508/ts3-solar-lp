@@ -64,6 +64,7 @@ export function App() {
 								<button
 									className=" flex gap-2 text-sm font-bold justify-center items-center bg-[#01AB55] text-white w-[230px] py-2 rounded-3xl cursor-pointer"
 									type="button"
+									onClick={handleRedirectWhatsapp}
 								>
 									CONTATE-NOS
 									<i className="bx bxl-whatsapp text-2xl font-bold" />
@@ -133,7 +134,7 @@ export function App() {
 							<div className="w-[350px] min-h-[350px] bg-white p-8 shadow flex flex-col space-y-16">
 
 								<div className="flex gap-6 items-center">
-								<div className="p-2 py-1 rounded-md text-xl font-bold bg=[#3C3B3B] bg-[#E1FFEE]"><i class='bx bx-sun'></i></div>
+								<div className="p-2 py-1 rounded-md text-xl font-bold bg=[#3C3B3B] bg-[#E1FFEE]"><i class='bx bx-sun' /></div>
 								<h2 className="text-2xl font-bold text-[#3C3B3B]">title</h2>
 								</div>
 								<p className="text-sm text-[#737171]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum quia cum ratione temporibus repudiandae doloremque, cumque vitae corrupti asperiores ipsam corporis sequi architecto nisi aliquam, iste possimus ut voluptatum?</p>
