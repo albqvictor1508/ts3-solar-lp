@@ -9,14 +9,15 @@ import { ProductsSection } from "./components/products-section";
 import { ClientsCard } from "./components/clients-card";
 
 export function App() {
-
 	const handleRedirectWhatsapp = () => {
 		const number = "558393759434";
-		const message = encodeURIComponent("Olá, gostaria de entrar em contato com alexsa!");
+		const message = encodeURIComponent(
+			"Olá, gostaria de entrar em contato com alexsa!",
+		);
 		const whatsappLink = `https://wa.me/${number}?text=${message}`;
 
-		window.open(whatsappLink) //redirect to whatsapp
-	}
+		window.open(whatsappLink); //redirect to whatsapp
+	};
 
 	return (
 		<div className="overflow-x-hidden">
@@ -107,37 +108,55 @@ export function App() {
 				>
 					<div className="flex flex-col space-y-20">
 						<h2 className="text-5xl font-bold text-[#3C3B3B]">Lorem ipsum</h2>
-						<h2 className="text-center text-4xl font-semibold text-[#3C3B3B]">Porque adquirir energia solar?</h2>
+						<h2 className="text-center text-4xl font-semibold text-[#3C3B3B]">
+							Porque adquirir energia solar?
+						</h2>
 
 						<div id="cards" className="flex gap-16 justify-center">
 							{/* fazer esquema de cards ou nessa seção, ou na do carrossel */}
 							<div className="w-[350px] min-h-[350px] bg-white p-8 shadow flex flex-col space-y-16">
-
 								<div className="flex gap-6 items-center">
-								<div className="px-2 py-1 rounded-md text-xl font-bold bg=[#3C3B3B] bg-[#E1FFEE]"><i class='bx bx-sun' /></div>
-								<h2 className="text-2xl font-bold text-[#3C3B3B]">title</h2>
+									<div className="px-2 py-1 rounded-md text-xl font-bold bg=[#3C3B3B] bg-[#E1FFEE]">
+										<i class="bx bx-sun" />
+									</div>
+									<h2 className="text-2xl font-bold text-[#3C3B3B]">title</h2>
 								</div>
-								<p className="text-sm text-[#737171]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum quia cum ratione temporibus repudiandae doloremque, cumque vitae corrupti asperiores ipsam corporis sequi architecto nisi aliquam, iste possimus ut voluptatum?</p>
+								<p className="text-sm text-[#737171]">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Quaerat eum quia cum ratione temporibus repudiandae
+									doloremque, cumque vitae corrupti asperiores ipsam corporis
+									sequi architecto nisi aliquam, iste possimus ut voluptatum?
+								</p>
 							</div>
 
-
 							<div className="w-[350px] min-h-[350px] bg-white p-8 shadow flex flex-col space-y-16">
-
 								<div className="flex gap-6 items-center">
-								<div className="px-2 py-1 rounded-md text-xl font-bold bg=[#3C3B3B] bg-[#E1FFEE]"><i class='bx bx-money' /></div>
-								<h2 className="text-2xl font-bold text-[#3C3B3B]">title</h2>
+									<div className="px-2 py-1 rounded-md text-xl font-bold bg=[#3C3B3B] bg-[#E1FFEE]">
+										<i class="bx bx-money" />
+									</div>
+									<h2 className="text-2xl font-bold text-[#3C3B3B]">title</h2>
 								</div>
-								<p className="text-sm text-[#737171]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum quia cum ratione temporibus repudiandae doloremque, cumque vitae corrupti asperiores ipsam corporis sequi architecto nisi aliquam, iste possimus ut voluptatum?</p>
+								<p className="text-sm text-[#737171]">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Quaerat eum quia cum ratione temporibus repudiandae
+									doloremque, cumque vitae corrupti asperiores ipsam corporis
+									sequi architecto nisi aliquam, iste possimus ut voluptatum?
+								</p>
 							</div>
 
-
 							<div className="w-[350px] min-h-[350px] bg-white p-8 shadow flex flex-col space-y-16">
-
 								<div className="flex gap-6 items-center">
-								<div className="p-2 py-1 rounded-md text-xl font-bold bg=[#3C3B3B] bg-[#E1FFEE]"><i class='bx bx-sun' /></div>
-								<h2 className="text-2xl font-bold text-[#3C3B3B]">title</h2>
+									<div className="p-2 py-1 rounded-md text-xl font-bold bg=[#3C3B3B] bg-[#E1FFEE]">
+										<i class="bx bx-sun" />
+									</div>
+									<h2 className="text-2xl font-bold text-[#3C3B3B]">title</h2>
 								</div>
-								<p className="text-sm text-[#737171]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum quia cum ratione temporibus repudiandae doloremque, cumque vitae corrupti asperiores ipsam corporis sequi architecto nisi aliquam, iste possimus ut voluptatum?</p>
+								<p className="text-sm text-[#737171]">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Quaerat eum quia cum ratione temporibus repudiandae
+									doloremque, cumque vitae corrupti asperiores ipsam corporis
+									sequi architecto nisi aliquam, iste possimus ut voluptatum?
+								</p>
 							</div>
 						</div>
 					</div>
@@ -146,43 +165,68 @@ export function App() {
 					{/* mexer nessa seção inteira */}
 
 					<div className="w-[1280px] mx-auto">
-						<div className="flex gap-12 px-4">
-							<div className="bg-white flex flex-col gap-8 p-8">
-								<span className="font-bold text-[#009C39] text-[18px]">01</span>
-								<h3 className="text-4xl text-[#3C3B3B]">
-									Solar panel for home.
-								</h3>
-								<p className="text-[#737171]">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-									eveniet, rerum sequi animi quisquam ipsa amet perspiciatis
-									molestiae atque quod ut praesentium porro architecto a? Cum ab
-									aliquam repellendus vero!
-								</p>
-							</div>
-							<div className="bg-white flex flex-col gap-8 p-8">
-								<span className="font-bold text-[#009C39] text-[18px]">01</span>
-								<h3 className="text-4xl text-[#3C3B3B]">
-									Solar panel for home.
-								</h3>
-								<p className="text-[#737171]">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-									eveniet, rerum sequi animi quisquam ipsa amet perspiciatis
-									molestiae atque quod ut praesentium porro architecto a? Cum ab
-									aliquam repellendus vero!
-								</p>
-							</div>
-							<div className="bg-white flex flex-col gap-8 p-8">
-								<span className="text-[18px] font-bold text-[#009C39]">01</span>
-								<h3 className="text-4xl text-[#3C3B3B]">
-									Solar panel for home.
-								</h3>
+						<div className="flex flex-col gap-24 px-4">
+							<div className="w-full flex items-center gap-8">
+								<div className="flex-1 w-[500px] h-[300px] flex justify-center items-center bg-gray-200 rounded-2xl">
+									<p>foto placa</p>
+								</div>
 
-								<p className="text-[#737171]">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-									eveniet, rerum sequi animi quisquam ipsa amet perspiciatis
-									molestiae atque quod ut praesentium porro architecto a? Cum ab
-									aliquam repellendus vero!
-								</p>
+								<div className="flex-1 flex flex-col gap-8 p-8">
+									<span className="font-bold text-[#009C39] text-[18px]">
+										01
+									</span>
+									<h3 className="text-4xl text-[#3C3B3B]">
+										Solar panel for home.
+									</h3>
+									<p className="text-[#737171]">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Quos eveniet, rerum sequi animi quisquam ipsa amet
+										perspiciatis molestiae atque quod ut praesentium porro
+										architecto a? Cum ab aliquam repellendus vero!
+									</p>
+								</div>
+							</div>
+
+							<div className="w-full flex items-center gap-8">
+								<div className="flex-1 flex flex-col gap-8 p-8">
+									<span className="font-bold text-[#009C39] text-[18px]">
+										01
+									</span>
+									<h3 className="text-4xl text-[#3C3B3B]">
+										Solar panel for home.
+									</h3>
+									<p className="text-[#737171]">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Quos eveniet, rerum sequi animi quisquam ipsa amet
+										perspiciatis molestiae atque quod ut praesentium porro
+										architecto a? Cum ab aliquam repellendus vero!
+									</p>
+								</div>
+
+								<div className="flex-1 w-[500px] h-[300px] flex justify-center items-center bg-gray-200 rounded-2xl">
+									<p>foto placa</p>
+								</div>
+							</div>
+
+							<div className="w-full flex items-center gap-8">
+								<div className="flex-1 w-[500px] h-[300px] flex justify-center items-center bg-gray-200 rounded-2xl">
+									<p>foto placa</p>
+								</div>
+
+								<div className="flex-1 flex flex-col gap-8 p-8">
+									<span className="font-bold text-[#009C39] text-[18px]">
+										01
+									</span>
+									<h3 className="text-4xl text-[#3C3B3B]">
+										Solar panel for home.
+									</h3>
+									<p className="text-[#737171]">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Quos eveniet, rerum sequi animi quisquam ipsa amet
+										perspiciatis molestiae atque quod ut praesentium porro
+										architecto a? Cum ab aliquam repellendus vero!
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
