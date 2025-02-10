@@ -1,9 +1,8 @@
 import undrawPc from "./assets/undraw-pc.svg";
 import intelbrasLogo from "./assets/intelbras-logo.svg";
-import isabelCliente01 from "./assets/ts3-images/isabel-cliente-01.png";
-import isabelCliente02 from "./assets/ts3-images/isabel-cliente-02.png";
-import isabelCliente03 from "./assets/ts3-images/isabel-cliente-03.png";
-import imagemTeto from "./assets/ts3-images/imagem-teto.png";
+import ts3Logo01 from "./assets/ts3-images/ts3-solar-logo-01.png";
+import skyLogo from "./assets/sky-logo.svg";
+import vivensisLogo from "./assets/traced-vivensis-logo.svg";
 import listCheck from "./assets/list-check.svg";
 import frenteTS3 from "./assets/ts3-images/frente-ts3.jpg";
 import { ProductsSection } from "./components/products-section";
@@ -14,17 +13,17 @@ export function App() {
 		<div className="overflow-x-hidden">
 			<header className="w-full bg-white fixed border-b border-b-gray-300 z-20">
 				<nav className="w-full flex justify-between items-center rounded-xl px-8 py-2">
-					<img src="" alt="logo TS3" className="w-36" />
+					<img src={ts3Logo01} alt="logo TS3" className="w-36" />
 					<div className="flex space-x-6 items-center">
 						<a href="#">
 							<button
 								className="items-center gap-2 border-2 border-[#3C3B3B] px-4 py-2 rounded-xl flex"
 								type="button"
 							>
-								<i className="bx bxl-instagram text-2xl font-bold text-[#3C3B3B]" />
 								<span className="font-bold text-sm text-[#3C3B3B]">
 									ts3tecnologia
 								</span>
+								<i className="bx bxl-instagram text-2xl font-bold text-[#3C3B3B]" />
 							</button>
 						</a>
 						<span className="font-bold text-sm text-[#737171]">OU</span>
@@ -81,10 +80,11 @@ export function App() {
 					>
 						<div className="w-[1280px] flex items-center justify-around mx-auto gap-16">
 							<img
-								src="public/img/vivensis-logo.svg"
+								src={vivensisLogo}
 								alt="vivensis tecnology"
+								className="w-fit h-fit"
 							/>
-							<img src="public/img/sky-logo.svg" alt="sky tv" />
+							<img src={skyLogo} alt="sky tv" />
 							<img src={intelbrasLogo} alt="intelbras" />
 						</div>
 					</div>
@@ -95,6 +95,8 @@ export function App() {
 					className="bg-gray-100 w-full py-12 px-12 pb-56 flex flex-col space-y-12"
 				>
 					<ClientsCard />
+
+					{/* mexer nessa seção inteira */}
 
 					<div className="w-[1280px] mx-auto">
 						<div className="flex gap-12 px-4">

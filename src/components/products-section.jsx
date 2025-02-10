@@ -49,7 +49,10 @@ export function ProductsSection() {
 						pagination={{ clickable: true }}
 					>
 						{data.map((product) => (
-							<SwiperSlide key={product.id} className="w-full h-full pb-12 ">
+							<SwiperSlide
+								key={product.id}
+								className="w-full h-full pb-12 px-4"
+							>
 								<div className="w-full flex justify-between items-center">
 									<div className="flex flex-col space-y-4 py-12">
 										<h2 className="text-5xl  font-bold mb-6">Lorem ipsum</h2>
