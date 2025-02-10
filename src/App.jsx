@@ -105,25 +105,38 @@ export function App() {
 					className="bg-gray-100 w-full py-12 px-12 pb-56 flex flex-col space-y-12"
 				>
 					<div className="flex flex-col space-y-20">
-						<h2>Lorem ipsum</h2>
-						<h2>Porque adquirir energia solar?</h2>
+						<h2 className="text-5xl font-bold text-[#3C3B3B]">Lorem ipsum</h2>
+						<h2 className="text-center text-4xl font-semibold text-[#3C3B3B]">Porque adquirir energia solar?</h2>
 
-						<div id="cards">
+						<div id="cards" className="flex gap-16 justify-center">
 							{/* fazer esquema de cards ou nessa seção, ou na do carrossel */}
-							<div>
-								icon
-								title
-								text
+							<div className="w-[350px] min-h-[350px] bg-white p-8 shadow flex flex-col space-y-16">
+
+								<div className="flex gap-6 items-center">
+								<div className="px-2 py-1 rounded-md text-xl font-bold bg=[#3C3B3B] bg-[#E1FFEE]"><i class='bx bx-sun' /></div>
+								<h2 className="text-2xl font-bold text-[#3C3B3B]">title</h2>
+								</div>
+								<p className="text-sm text-[#737171]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum quia cum ratione temporibus repudiandae doloremque, cumque vitae corrupti asperiores ipsam corporis sequi architecto nisi aliquam, iste possimus ut voluptatum?</p>
 							</div>
-							<div>
-								icon
-								title
-								text
+
+
+							<div className="w-[350px] min-h-[350px] bg-white p-8 shadow flex flex-col space-y-16">
+
+								<div className="flex gap-6 items-center">
+								<div className="px-2 py-1 rounded-md text-xl font-bold bg=[#3C3B3B] bg-[#E1FFEE]"><i class='bx bx-money' /></div>
+								<h2 className="text-2xl font-bold text-[#3C3B3B]">title</h2>
+								</div>
+								<p className="text-sm text-[#737171]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum quia cum ratione temporibus repudiandae doloremque, cumque vitae corrupti asperiores ipsam corporis sequi architecto nisi aliquam, iste possimus ut voluptatum?</p>
 							</div>
-							<div>
-								icon
-								title
-								text
+
+
+							<div className="w-[350px] min-h-[350px] bg-white p-8 shadow flex flex-col space-y-16">
+
+								<div className="flex gap-6 items-center">
+								<div className="p-2 py-1 rounded-md text-xl font-bold bg=[#3C3B3B] bg-[#E1FFEE]"><i class='bx bx-sun'></i></div>
+								<h2 className="text-2xl font-bold text-[#3C3B3B]">title</h2>
+								</div>
+								<p className="text-sm text-[#737171]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum quia cum ratione temporibus repudiandae doloremque, cumque vitae corrupti asperiores ipsam corporis sequi architecto nisi aliquam, iste possimus ut voluptatum?</p>
 							</div>
 						</div>
 					</div>
