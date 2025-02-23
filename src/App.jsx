@@ -3,14 +3,13 @@ import intelbrasLogo from "./assets/intelbras-logo.svg";
 import ts3Logo01 from "./assets/ts3-images/ts3-solar-logo-01.png";
 import skyLogo from "./assets/sky-logo.svg";
 import vivensisLogo from "./assets/traced-vivensis-logo.svg";
-import listCheck from "./assets/list-check.svg";
 import frenteTS3 from "./assets/ts3-images/frente-ts3.jpg";
 import { ProductsSection } from "./components/products-section";
 import { ClientsCard } from "./components/clients-card";
 
 export function App() {
 	const handleRedirectWhatsapp = () => {
-		const number = "558393759434";
+		const number = "83991303948";
 		const message = encodeURIComponent(
 			"Olá, gostaria de entrar em contato com alexsa!",
 		);
@@ -25,7 +24,7 @@ export function App() {
 				<nav className="w-full flex justify-between items-center rounded-xl px-8 py-2">
 					<img src={ts3Logo01} alt="logo TS3" className="w-36" />
 					<div className="flex space-x-6 items-center">
-						<a href="#">
+						<a href="instagram">
 							<button
 								className="items-center gap-2 border-2 border-[#3C3B3B] px-4 py-2 rounded-xl flex"
 								type="button"
@@ -131,7 +130,7 @@ export function App() {
 
 							<div className="w-[350px] min-h-[350px] bg-white p-8 shadow flex flex-col space-y-16">
 								<div className="flex gap-6 items-center">
-									<div className="px-2 py-1 rounded-md text-xl font-bold bg=[#3C3B3B] bg-[#E1FFEE]">
+									<div className="px-2 py-1 rounded-md text-xl font-bold bg-[#E1FFEE]">
 										<i class="bx bx-money" />
 									</div>
 									<h2 className="text-2xl font-bold text-[#3C3B3B]">title</h2>
@@ -146,7 +145,7 @@ export function App() {
 
 							<div className="w-[350px] min-h-[350px] bg-white p-8 shadow flex flex-col space-y-16">
 								<div className="flex gap-6 items-center">
-									<div className="p-2 py-1 rounded-md text-xl font-bold bg=[#3C3B3B] bg-[#E1FFEE]">
+									<div className="p-2 py-1 rounded-md text-xl font-bold bg-[#E1FFEE]">
 										<i class="bx bx-sun" />
 									</div>
 									<h2 className="text-2xl font-bold text-[#3C3B3B]">title</h2>
@@ -236,15 +235,13 @@ export function App() {
 
 				<section id="location-section" className="py-12  text-[#3C3B3B] mb-32">
 					<div className="flex flex-col w-[1280px] mx-auto space-y-12">
-						<div>
-							<h2 className="text-5xl font-bold mb-4">Bom dia</h2>
-							<p className="w-[700px]">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-								earum animi neque minima officia cupiditate nemo nihil, illo ab
-								vitae quae, quia praesentium numquam qui eveniet tempore?
-								Impedit, culpa a!
-							</p>
-						</div>
+						<h2 className="text-5xl font-bold mb-4">Sobre a TS3</h2>
+						<p className="w-[800px] text-justify">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+							quibusdam, recusandae suscipit alias, est eum iusto ullam
+							excepturi nobis debitis iste! Voluptatibus, laboriosam voluptatum!
+							Fuga odio enim corrupti facere repellat.
+						</p>
 
 						<div className="w-full flex justify-around">
 							<div className="h-[500px] overflow-hidden w-full">
@@ -255,25 +252,42 @@ export function App() {
 								/>
 							</div>
 						</div>
-						<div className="flex items-center gap-12">
-							<div className="flex-1 bg-gray-200">
+
+						<div className="flex space-y-8 gap-16 mt-16">
+							<div className="flex flex-col space-y-10">
+								<p className="w-[650px] text-justify">
+									A TS3 SOLAR é uma empresa fundada em 2021 e que tem o objetivo
+									de ofertar a energia solar para a população da região em que
+									está inserida, com o compromisso de prestar todos os serviços
+									necessários ao perfeito funcionamento de todo o sistema, desde
+									a elaboração de projetos, instalação, homologação e manutenção
+									de sistemas fotovoltaicos.
+								</p>
+								<p className="w-[650px] text-justify">
+									Nos orgulhamos de ser uma{" "}
+									<span className="font-bold text-[#79CE9F] capitalize">
+										revenda autorizada intelbras
+									</span>
+									, um dos maiores fabricantes de gerador solar da América
+									Latina. Além de mantermos uma equipe técnica qualificada,
+									possuindo todas as certificações necessárias para a atuação
+									neste segmento. Toda essa qualificação tem a finalidade de
+									garantirmos a satisfação de todos os nossos clientes.
+								</p>
+								<p className="w-[650px] text-justify">
+									Nossa missão é contribuir para a redução da dependência
+									energéticas de fontes de energia não renováveis, minimizando o
+									impacto ambiental. Além disso, fornecemos soluções de energia
+									solar que contribuam para a melhoria da qualidade de vida da
+									população, através de melhoria da realidade financeira de
+									nossos clientes, tendo em vista a rentabilidade do
+									investimento realizado em médio e longo prazo.
+								</p>
+							</div>
+							<div className="flex-1 bg-gray-200 rounded-xl flex justify-center items-center">
 								{/* <img src="./img/hero-image-2.svg" alt="" className="object-cover w-full rounded-[10px]" /> */}
 								foto do mapa
 							</div>
-							<ul className="space-y-2 mb-8 flex flex-col flex-1 gap-8">
-								<li className="flex gap-2 text-[#737171] text-[18px]">
-									<img src={listCheck} alt="list check" />
-									Atendemos na Paraíba, em Pernambuco e no Rio Grande do Norte
-								</li>
-								<li className="flex gap-2 text-[#737171] text-[18px]">
-									<img src={listCheck} alt="list check" />
-									Possuímos serviço de qualidade aprovado pela região!
-								</li>
-								<li className="flex gap-2 text-[#737171] text-[18px]">
-									<img src={listCheck} alt="list check" />
-									Atendemos na Paraíba, em Recife e no Rio Grande do Norte
-								</li>
-							</ul>
 						</div>
 					</div>
 				</section>
@@ -308,7 +322,7 @@ export function App() {
 								<ul className="flex flex-col gap-4">
 									<li className="text-sm text-white font-bold">CONTATO</li>
 									<li className="text-[#3C3B3B] cursor-pointer ">
-										<a className="font-medium" href="#">
+										<a className="font-medium" href="#hero-section">
 											Contate-nos
 										</a>
 									</li>
