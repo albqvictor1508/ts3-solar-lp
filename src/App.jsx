@@ -3,7 +3,7 @@ import intelbrasLogo from "./assets/intelbras-logo.svg";
 import ts3Logo01 from "./assets/ts3-images/ts3-solar-logo-01.png";
 import skyLogo from "./assets/sky-logo.svg";
 import vivensisLogo from "./assets/traced-vivensis-logo.svg";
-import frenteTS3 from "./assets/ts3-images/frente-ts3.jpg";
+import frenteTS3 from "./assets/ts3-images/frente-ts3-solar.jpg";
 import { ProductsSection } from "./components/products-section";
 import { ClientsCard } from "./components/clients-card";
 
@@ -35,7 +35,6 @@ export function App() {
 								<i className="bx bxl-instagram text-2xl font-bold text-[#3C3B3B]" />
 							</button>
 						</a>
-						<span className="font-bold text-sm text-[#737171]">OU</span>
 						<button
 							className="text-white bg-[#01AB55] px-4 py-2 rounded-xl font-bold text-base flex gap-2 items-center cursor-pointer"
 							type="button"
@@ -301,7 +300,6 @@ export function App() {
 							/>
 						</div>
 						<div className="flex flex-col space-y-4">
-							<i className="bx bxl-instagram text-2xl font-bold text-[#3C3B3B]" />
 							<div className="flex gap-8 space-y-8">
 								<ul className="flex flex-col gap-4">
 									<li className="text-sm text-white font-bold">PRODUTO</li>
