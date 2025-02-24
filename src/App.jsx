@@ -6,16 +6,19 @@ import vivensisLogo from "./assets/traced-vivensis-logo.svg";
 import frenteTS3 from "./assets/ts3-images/frente-ts3-solar.jpg";
 import { ProductsSection } from "./components/products-section";
 import { ClientsCard } from "./components/clients-card";
+import SolarPhoto1 from "./assets/solar-photo-1.svg";
+import SolarPhoto2 from "./assets/solar-photo-2.svg";
+import SolarPhoto3 from "./assets/solar-photo-3.svg";
 
 export function App() {
 	const handleRedirectWhatsapp = () => {
-		const number = "83991303948";
+		const number = "83993759434";
 		const message = encodeURIComponent(
 			"Olá, gostaria de entrar em contato com alexsa!",
 		);
 		const whatsappLink = `https://wa.me/${number}?text=${message}`;
 
-		window.open(whatsappLink); //redirect to whatsapp
+		window.open(whatsappLink);
 	};
 
 	return (
@@ -36,7 +39,7 @@ export function App() {
 							</button>
 						</a>
 						<button
-							className="text-white bg-[#01AB55] px-4 py-2 rounded-xl font-bold text-base flex gap-2 items-center cursor-pointer"
+							className="text-white bg-[#01AB55] px-4 py-2.5 rounded-xl font-bold text-base flex gap-2 items-center cursor-pointer"
 							type="button"
 							onClick={handleRedirectWhatsapp}
 						>
@@ -166,7 +169,11 @@ export function App() {
 						<div className="flex flex-col gap-24 px-4">
 							<div className="w-full flex items-center gap-8">
 								<div className="flex-1 w-[500px] h-[300px] flex justify-center items-center bg-gray-200 rounded-2xl">
-									<p>foto placa</p>
+									<img
+										className="w-full h-full object-cover rounded-2xl"
+										src={SolarPhoto1}
+										alt=""
+									/>
 								</div>
 
 								<div className="flex-1 flex flex-col gap-8 p-8">
@@ -202,13 +209,21 @@ export function App() {
 								</div>
 
 								<div className="flex-1 w-[500px] h-[300px] flex justify-center items-center bg-gray-200 rounded-2xl">
-									<p>foto placa</p>
+									<img
+										src={SolarPhoto2}
+										className="w-full h-full object-cover rounded-2xl"
+										alt=""
+									/>
 								</div>
 							</div>
 
 							<div className="w-full flex items-center gap-8">
 								<div className="flex-1 w-[500px] h-[300px] flex justify-center items-center bg-gray-200 rounded-2xl">
-									<p>foto placa</p>
+									<img
+										src={SolarPhoto3}
+										className="w-full h-full object-cover rounded-2xl"
+										alt=""
+									/>
 								</div>
 
 								<div className="flex-1 flex flex-col gap-8 p-8">
@@ -233,14 +248,9 @@ export function App() {
 				<ProductsSection />
 
 				<section id="location-section" className="py-12  text-[#3C3B3B] mb-32">
-					<div className="flex flex-col w-[1280px] mx-auto space-y-12">
-						<h2 className="text-5xl font-bold mb-4">Sobre a TS3</h2>
-						<p className="w-[800px] text-justify">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-							quibusdam, recusandae suscipit alias, est eum iusto ullam
-							excepturi nobis debitis iste! Voluptatibus, laboriosam voluptatum!
-							Fuga odio enim corrupti facere repellat.
-						</p>
+					<div className="flex flex-col w-[1280px] mx-auto space-y-14">
+						<h2 className="text-5xl font-bold">Sobre a TS3</h2>
+						{/* <p className="w-[800px] text-justify">Localizada na Rua Lorem</p> */}
 
 						<div className="w-full flex justify-around">
 							<div className="h-[500px] overflow-hidden w-full">
@@ -252,9 +262,9 @@ export function App() {
 							</div>
 						</div>
 
-						<div className="flex space-y-8 gap-16 mt-16">
+						<div className="flex space-y-8 gap-16">
 							<div className="flex flex-col space-y-10">
-								<p className="w-[650px] text-justify">
+								<p className="w-[600px] text-justify">
 									A TS3 SOLAR é uma empresa fundada em 2021 e que tem o objetivo
 									de ofertar a energia solar para a população da região em que
 									está inserida, com o compromisso de prestar todos os serviços
@@ -262,7 +272,7 @@ export function App() {
 									a elaboração de projetos, instalação, homologação e manutenção
 									de sistemas fotovoltaicos.
 								</p>
-								<p className="w-[650px] text-justify">
+								<p className="w-[600px] text-justify">
 									Nos orgulhamos de ser uma{" "}
 									<span className="font-bold text-[#79CE9F] capitalize">
 										revenda autorizada intelbras
@@ -273,7 +283,7 @@ export function App() {
 									neste segmento. Toda essa qualificação tem a finalidade de
 									garantirmos a satisfação de todos os nossos clientes.
 								</p>
-								<p className="w-[650px] text-justify">
+								<p className="w-[600px] text-justify">
 									Nossa missão é contribuir para a redução da dependência
 									energéticas de fontes de energia não renováveis, minimizando o
 									impacto ambiental. Além disso, fornecemos soluções de energia
