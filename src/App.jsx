@@ -202,7 +202,7 @@ export function App() {
 								</div>
 							</div>
 
-							<div className="flex flex-col md:flex-row-reverse items-center gap-8">
+							<div className="flex flex-col md:flex-row-reverse	 items-center gap-8">
 								<div className="flex-1 w-full md:w-[500px] h-[300px] flex justify-center items-center bg-gray-200 rounded-2xl">
 									<img
 										src={SolarPhoto2}
