@@ -262,6 +262,7 @@ export function App() {
 						<h2 className="text-3xl md:text-5xl font-bold text-center">
 							Sobre a TS3
 						</h2>
+
 						<div className="flex justify-center">
 							<div className="w-full h-[300px] md:h-[500px] overflow-hidden">
 								<img
@@ -271,39 +272,65 @@ export function App() {
 								/>
 							</div>
 						</div>
+
 						<div className="flex flex-col md:flex-row gap-8 items-start">
 							<div className="flex-1 space-y-4 md:space-y-10">
 								<p className="text-justify">
-									A TS3 SOLAR é uma empresa fundada em 2021 e que tem o objetivo
-									de ofertar a energia solar para a população da região em que
-									está inserida, com o compromisso de prestar todos os serviços
-									necessários ao perfeito funcionamento de todo o sistema, desde
-									a elaboração de projetos, instalação, homologação e manutenção
-									de sistemas fotovoltaicos.
-								</p>
-								<p className="text-justify">
-									Nos orgulhamos de ser uma{" "}
-									<span className="font-bold text-[#79CE9F] capitalize">
-										revenda autorizada intelbras
+									Fundada em 2021, a TS3 SOLAR leva energia solar para toda a
+									região com projetos completos - da instalação à manutenção.
+									Como{" "}
+									<span className="font-bold text-[#79CE9F]">
+										revenda autorizada Intelbras
 									</span>
-									, um dos maiores fabricantes de gerador solar da América
-									Latina. Além de mantermos uma equipe técnica qualificada,
-									possuindo todas as certificações necessárias para a atuação
-									neste segmento. Toda essa qualificação tem a finalidade de
-									garantirmos a satisfação de todos os nossos clientes.
+									, garantimos tecnologia de ponta e equipe certificada para
+									máxima eficiência e satisfação dos clientes.
 								</p>
-								<p className="text-justify">
-									Nossa missão é contribuir para a redução da dependência
-									energéticas de fontes de energia não renováveis, minimizando o
-									impacto ambiental. Além disso, fornecemos soluções de energia
-									solar que contribuam para a melhoria da qualidade de vida da
-									população, através de melhoria da realidade financeira de
-									nossos clientes, tendo em vista a rentabilidade do
-									investimento realizado em médio e longo prazo.
-								</p>
+
+								<div className="relative h-[300px] md:h-[400px] rounded-xl overflow-hidden">
+									<p className="text-justify">
+										Nossa missão vai além de instalar placas solares: queremos
+										revolucionar o acesso à energia limpa, reduzindo a
+										dependência de fontes não renováveis e impactando
+										positivamente o meio ambiente.
+									</p>
+
+									<p className="text-justify">
+										Cada projeto é calculado para trazer economia imediata na
+										conta de luz e retorno financeiro garantido em médio prazo,
+										melhorando a qualidade de vida através de energia
+										sustentável e acessível.
+									</p>
+								</div>
 							</div>
-							<div className="flex-1 bg-gray-200 rounded-xl flex justify-center items-center">
-								foto do mapa
+
+							<div className="flex-1">
+								<img
+									src={frenteTS3}
+									alt="Localização TS3"
+									className="w-full h-full object-cover rounded-2xl"
+								/>
+								<p className="text-right text-sm font-normal w-full mb-4 mt-1.5">
+									Rua João Feliciano Filho, 370
+								</p>
+								<div className="w-full border flex gap-4">
+									<div className="bg-[#79CE9F]/10 p-6 rounded-xl flex-1">
+										<p className="font-bold text-sm md:text-xl mb-2">
+											+ de 100 projetos instalados
+										</p>
+									</div>
+
+									<div className="bg-[#79CE9F]/10 p-6 rounded-xl flex-1">
+										<p className="font-bold text-sm md:text-xl mb-2">
+											Atendemos na Paraíba, Recife, Rio Grande do Norte e região{" "}
+										</p>
+									</div>
+
+									<div className="bg-[#79CE9F]/10 p-6 rounded-xl flex-1">
+										<p className="font-bold text-sm md:text-xl mb-2">
+											+ de 100 projetos instalados
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
