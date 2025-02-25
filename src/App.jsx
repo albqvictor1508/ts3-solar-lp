@@ -9,8 +9,15 @@ import { ClientsCard } from "./components/clients-card";
 import SolarPhoto1 from "./assets/solar-photo-1.svg";
 import SolarPhoto2 from "./assets/solar-photo-2.svg";
 import SolarPhoto3 from "./assets/solar-photo-3.svg";
+import { useState } from "react";
 
 export function App() {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	const toggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen);
+	}
+
 	const handleRedirectWhatsapp = () => {
 		const number = "83993759434";
 		const message = encodeURIComponent(
@@ -23,33 +30,41 @@ export function App() {
 
 	return (
 		<div className="overflow-x-hidden">
-			{/* Cabeçalho */}
-			<header className="w-full bg-white fixed border-b border-gray-300 z-20">
-				<nav className="w-full flex justify-between items-center rounded-xl px-4 md:px-8 py-2">
-					<img src={ts3Logo01} alt="logo TS3" className="w-28 md:w-36" />
-					<div className="flex space-x-4 md:space-x-6 items-center">
-						<a href="instagram">
-							<button
-								className="flex items-center gap-2 border-2 border-[#3C3B3B] px-3 py-2 rounded-xl"
-								type="button"
-							>
-								<span className="font-bold text-sm text-[#3C3B3B]">
-									ts3tecnologia
-								</span>
-								<i className="bx bxl-instagram text-2xl font-bold text-[#3C3B3B]" />
-							</button>
-						</a>
-						<button
-							className="flex gap-2 items-center bg-[#01AB55] text-white px-3 py-2 rounded-xl font-bold text-base"
-							type="button"
-							onClick={handleRedirectWhatsapp}
-						>
-							Contate-nos
-							<i className="bx bxl-whatsapp text-2xl font-bold" />
-						</button>
-					</div>
-				</nav>
-			</header>
+		 <header className="w-full bg-white fixed border-b border-gray-300 z-20">
+      <nav className="w-full flex justify-between items-center rounded-xl px-4 md:px-8 py-2">
+        <img src={ts3Logo01} alt="logo TS3" className="w-28 md:w-36" />
+        
+        <button
+			type="button"
+          className="md:hidden text-2xl text-[#3C3B3B]"
+          onClick={toggleMenu}
+        >
+          <i className={`bx ${isMenuOpen ? "bx-x" : "bx-menu"}`} />
+        </button>
+
+        <div
+          className={`${isMenuOpen ? "flex" : "hidden"} md:flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 mt-4 md:mt-0`}
+        >
+          <a href="instagram">
+            <button
+              className="flex items-center gap-2 border-2 border-[#3C3B3B] px-3 py-2 rounded-xl"
+              type="button"
+            >
+              <span className="font-bold text-sm text-[#3C3B3B]">ts3tecnologia</span>
+              <i className="bx bxl-instagram text-2xl font-bold text-[#3C3B3B]" />
+            </button>
+          </a>
+          <button
+            className="flex gap-2 items-center bg-[#01AB55] text-white px-3 py-2 rounded-xl font-bold text-base"
+            type="button"
+            onClick={handleRedirectWhatsapp}
+          >
+            Contate-nos
+            <i className="bx bxl-whatsapp text-2xl font-bold" />
+          </button>
+        </div>
+      </nav>
+    </header>
 
 			<main className="mx-auto">
 				{/* Seção Hero */}
