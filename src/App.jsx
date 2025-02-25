@@ -275,86 +275,100 @@ export function App() {
 				<ProductsSection />
 
 				<section
-					id="location-section"
-					className="py-12 text-[#3C3B3B] mb-12 md:mb-32"
-				>
-					<div className="container mx-auto flex flex-col space-y-6 md:space-y-14 px-4">
-						<h2 className="text-3xl md:text-5xl font-bold text-center">
-							Sobre a TS3
-						</h2>
+  id="location-section"
+  className="py-16 text-[#3C3B3B] mb-12 md:mb-32 bg-gradient-to-b from-white to-gray-50" // Gradiente sutil
+>
+  <div className="container mx-auto flex flex-col space-y-10 md:space-y-16 px-4">
+    {/* Título */}
+    <h2 className="text-4xl md:text-5xl font-bold text-center text-[#2C3E50]">
+      Sobre a <span className="text-[#01AB55]">TS3</span>
+    </h2>
 
-						<div className="flex justify-center">
-							<div className="w-full h-[300px] md:h-[500px] overflow-hidden">
-								<img
-									src={frenteTS3}
-									alt="Frente TS3"
-									className="w-full h-full object-cover rounded-2xl"
-								/>
-							</div>
-						</div>
+    {/* Imagem da Frente TS3 */}
+    <div className="w-full h-[300px] md:h-[500px] overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
+      <img
+        src={frenteTS3}
+        alt="Frente TS3"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-						<div className="flex flex-col md:flex-row gap-8 items-start">
-							<div className="flex-1 space-y-4 md:space-y-10">
-								<p className="text-justify">
-									Fundada em 2021, a TS3 SOLAR leva energia solar para toda a
-									região com projetos completos - da instalação à manutenção.
-									Como{" "}
-									<span className="font-bold text-[#79CE9F]">
-										revenda autorizada Intelbras
-									</span>
-									, garantimos tecnologia de ponta e equipe certificada para
-									máxima eficiência e satisfação dos clientes.
-								</p>
+    {/* Conteúdo Principal */}
+    <div className="flex flex-col md:flex-row gap-10 md:gap-16">
+      {/* Texto Sobre a Empresa */}
+      <div className="flex-1 space-y-8">
+        <p className="text-justify text-base md:text-lg leading-relaxed text-[#555]">
+          Fundada em 2021, a <strong className="text-[#01AB55]">TS3 SOLAR</strong> leva energia solar para toda a região com
+          projetos completos - da instalação à manutenção. Como{" "}
+          <span className="font-bold text-[#01AB55]">
+            revenda autorizada Intelbras
+          </span>
+          , garantimos tecnologia de ponta e equipe certificada para máxima
+          eficiência e satisfação dos clientes.
+        </p>
 
-									<p className="text-justify">
-										Nossa missão vai além de instalar placas solares: queremos
-										revolucionar o acesso à energia limpa, reduzindo a
-										dependência de fontes não renováveis e impactando
-										positivamente o meio ambiente.
-									</p>
+        <p className="text-justify text-base md:text-lg leading-relaxed text-[#555]">
+          Nossa missão vai além de instalar placas solares: queremos revolucionar
+          o acesso à energia limpa, reduzindo a dependência de fontes não
+          renováveis e impactando positivamente o meio ambiente.
+        </p>
 
-									<p className="text-justify">
-										Cada projeto é calculado para trazer economia imediata na
-										conta de luz e retorno financeiro garantido em médio prazo,
-										melhorando a qualidade de vida através de energia
-										sustentável e acessível.
-									</p>
-							</div>
+        <p className="text-justify text-base md:text-lg leading-relaxed text-[#555]">
+          Cada projeto é calculado para trazer economia imediata na conta de luz
+          e retorno financeiro garantido em médio prazo, melhorando a qualidade
+          de vida através de energia sustentável e acessível.
+        </p>
+      </div>
 
-							<div className="flex-1">
-								<img
-									src={frenteTS3}
-									alt="Localização TS3"
-									className="w-full h-full object-cover rounded-2xl"
-								/>
-								<p className="text-right text-sm font-normal w-full mb-4 mt-1.5">
-									Rua João Feliciano Filho, 370
-								</p>
-								<div className="w-full flex gap-4">
-									<div className="bg-[#79CE9F]/10 p-6 rounded-xl flex-1">
-										<p className="font-bold text-sm md:text-xl mb-2">
-											+ de 100 projetos instalados
-										</p>
-									</div>
+      {/* Localização e Estatísticas */}
+      <div className="flex-1 space-y-8">
+        {/* Mapa */}
+        <div className="w-full h-[250px] md:h-[350px] overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
+          <iframe
+		  	title="bom dia"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.327347317312!2d-35.2094856852315!3d-5.812295395785292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b255b1b3a9b6b5%3A0x9c8b4b8b8b8b8b8b!2sTS3%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1629999999999!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+          />
+        </div>
+        <p className="text-right text-sm text-[#555] mt-2">
+          📍 Rua João Feliciano Filho, 370
+        </p>
 
-									<div className="bg-[#79CE9F]/10 p-6 rounded-xl flex-1">
-										<p className="font-bold text-sm md:text-base mb-2">
-											Atendemos na Paraíba, Recife, Rio Grande do Norte e região
-										</p>
-									</div>
+        {/* Estatísticas */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-gradient-to-br from-[#01AB55]/10 to-[#01AB55]/5 p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div className="flex items-center gap-3">
+              <i className="bx bx-check-circle text-3xl text-[#01AB55]" />
+              <p className="font-bold text-xl text-[#2C3E50]">
+                + de 100 projetos
+              </p>
+            </div>
+            <p className="text-sm text-[#555] mt-2">
+              Instalados com sucesso em toda a região.
+            </p>
+          </div>
 
-									<div className="bg-[#79CE9F]/10 p-6 rounded-xl flex-1">
-										<p className="font-bold text-sm md:text-xl mb-2">
-											+ de 100 projetos instalados
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+          <div className="bg-gradient-to-br from-[#01AB55]/10 to-[#01AB55]/5 p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div className="flex items-center gap-3">
+              <i className="bx bx-map text-3xl text-[#01AB55]" />
+              <p className="font-bold text-xl text-[#2C3E50]">
+                Atendemos em 3 estados
+              </p>
+            </div>
+            <p className="text-sm text-[#555] mt-2">
+              Paraíba, Recife, Rio Grande do Norte e região.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-				{/* Rodapé */}
 				<footer>
 					<div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-10 px-4">
 						<div>
