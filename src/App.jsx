@@ -36,6 +36,7 @@ export function App() {
         
         <button
 			type="button"
+
           className="md:hidden text-2xl text-[#3C3B3B]"
           onClick={toggleMenu}
         >
@@ -130,10 +131,7 @@ export function App() {
 					className="bg-gray-100 w-full py-12 px-4 md:px-12 pb-12 md:pb-56 flex flex-col space-y-12"
 				>
 					<div className="flex flex-col space-y-6 md:space-y-20">
-						<h2 className="text-3xl md:text-5xl font-bold text-[#3C3B3B] text-center">
-							Lorem ipsum
-						</h2>
-						<h2 className="text-2xl md:text-4xl font-semibold text-[#3C3B3B] text-center">
+						<h2 className="text-3xl md:text-4xl font-bold text-[#3C3B3B] text-center ">
 							Onde Atendemos?
 						</h2>
 
@@ -308,7 +306,6 @@ export function App() {
 									máxima eficiência e satisfação dos clientes.
 								</p>
 
-								<div className="relative h-[300px] md:h-[400px] rounded-xl overflow-hidden">
 									<p className="text-justify">
 										Nossa missão vai além de instalar placas solares: queremos
 										revolucionar o acesso à energia limpa, reduzindo a
@@ -322,7 +319,6 @@ export function App() {
 										melhorando a qualidade de vida através de energia
 										sustentável e acessível.
 									</p>
-								</div>
 							</div>
 
 							<div className="flex-1">
@@ -334,15 +330,15 @@ export function App() {
 								<p className="text-right text-sm font-normal w-full mb-4 mt-1.5">
 									Rua João Feliciano Filho, 370
 								</p>
-								<div className="w-full border flex gap-4">
-									{/* <div className="bg-[#79CE9F]/10 p-6 rounded-xl flex-1">
+								<div className="w-full flex gap-4">
+									<div className="bg-[#79CE9F]/10 p-6 rounded-xl flex-1">
 										<p className="font-bold text-sm md:text-xl mb-2">
 											+ de 100 projetos instalados
 										</p>
-									</div> */}
+									</div>
 
 									<div className="bg-[#79CE9F]/10 p-6 rounded-xl flex-1">
-										<p className="font-semibold text-sm md:text-base mb-2">
+										<p className="font-bold text-sm md:text-base mb-2">
 											Atendemos na Paraíba, Recife, Rio Grande do Norte e região
 										</p>
 									</div>

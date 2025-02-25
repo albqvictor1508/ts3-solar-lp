@@ -12,7 +12,9 @@ export function ProductsSection() {
 		{
 			id: "1",
 			title: "Placa Solar",
-			text: "Ter uma placa solar traz economia de até 95% na conta de luz, com retorno do investimento em 5 a 7 anos, além de oferecer independência energética e proteção contra aumentos nas tarifas. O imóvel valoriza em até 8%, e o usuário contribui para o meio ambiente, reduzindo a pegada de carbono com energia limpa e sustentável. Um investimento que une economia, segurança e benefícios ambientais por décadas, Para adquirir uma, siga:",
+			text: `
+A placa solar traz economia de até 95% na conta de luz, com retorno do investimento em 5 a 7 anos, além de valorizar o imóvel em até 8%. Para adquirir, você deve contratar a TS3 para uma avaliação do consumo e viabilidade. Após a análise, é criado um projeto e definido o orçamento. Em seguida, profissionais certificados realizam a instalação e a integração à rede elétrica. Um investimento que une economia financeira, segurança energética, valorização do imóvel e benefícios ambientais por décadas, reduzindo a pegada de carbono com energia limpa e sustentável.
+			`,
 			img: <img src={solarPlatePhoto} alt="Placa Solar" />,
 		},
 		{
@@ -58,17 +60,19 @@ export function ProductsSection() {
 					{data.map((product) => (
 						<SwiperSlide key={product.id} className="pb-12">
 							<div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8">
+
 								<div className="flex flex-col space-y-4 py-12 max-w-full md:max-w-[600px]">
-									<h2 className="text-3xl md:text-5xl font-bold mb-6">
+									<h2 className="text-3xl md:text-5xl font-bold mb-6 p-4 text-[#3C3B3B]">
 										{product.title}
 									</h2>
-									<p className="w-full md:w-[500px] text-justify">
+									<p className="w-full md:w-[500px] text-justify p-4 text-[#3C3B3B]">
 										{product.text}
 									</p>
 								</div>
 								<div className="flex w-full md:w-auto h-auto md:p-4">
 									{product.img}
 								</div>
+
 							</div>
 						</SwiperSlide>
 					))}
