@@ -110,7 +110,6 @@ export function App() {
 					</div>
 				</section>
 
-				{/* Seção About */}
 				<section
 					id="about-section"
 					className="bg-gray-100 w-full py-12 px-4 md:px-12 pb-12 md:pb-56 flex flex-col space-y-12"
@@ -255,7 +254,6 @@ export function App() {
 
 				<ProductsSection />
 
-				{/* Seção Location */}
 				<section
 					id="location-section"
 					className="py-12 text-[#3C3B3B] mb-12 md:mb-32"
