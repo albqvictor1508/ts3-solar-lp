@@ -119,7 +119,7 @@ export function App() {
 							Lorem ipsum
 						</h2>
 						<h2 className="text-2xl md:text-4xl font-semibold text-[#3C3B3B] text-center">
-							Porque adquirir energia solar?
+							Onde Atendemos?
 						</h2>
 
 						<div
@@ -131,7 +131,7 @@ export function App() {
 									<div className="px-2 py-1 rounded-md text-xl font-bold bg-[#E1FFEE]">
 										<i className="bx bx-sun" />
 									</div>
-									<h2 className="text-2xl font-bold text-[#3C3B3B]">Title</h2>
+									<h2 className="text-2xl font-bold text-[#3C3B3B]">Casas</h2>
 								</div>
 								<p className="text-sm text-[#737171]">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -146,7 +146,9 @@ export function App() {
 									<div className="px-2 py-1 rounded-md text-xl font-bold bg-[#E1FFEE]">
 										<i className="bx bx-money" />
 									</div>
-									<h2 className="text-2xl font-bold text-[#3C3B3B]">Title</h2>
+									<h2 className="text-2xl font-bold text-[#3C3B3B]">
+										Comércios
+									</h2>
 								</div>
 								<p className="text-sm text-[#737171]">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -161,7 +163,9 @@ export function App() {
 									<div className="px-2 py-1 rounded-md text-xl font-bold bg-[#E1FFEE]">
 										<i className="bx bx-sun" />
 									</div>
-									<h2 className="text-2xl font-bold text-[#3C3B3B]">Title</h2>
+									<h2 className="text-2xl font-bold text-[#3C3B3B]">
+										Zona Rural
+									</h2>
 								</div>
 								<p className="text-sm text-[#737171]">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -176,6 +180,9 @@ export function App() {
 					<ClientsCard />
 
 					<div className="container mx-auto px-4">
+						<h2 className="text-center font-bold text-4xl pb-16 text-[#3C3B3B]">
+							Porque adquirir Energia Solar?
+						</h2>
 						<div className="flex flex-col gap-12">
 							<div className="flex flex-col md:flex-row items-center gap-8">
 								<div className="flex-1 w-full md:w-[500px] h-[300px] flex justify-center items-center bg-gray-200 rounded-2xl">
@@ -189,8 +196,8 @@ export function App() {
 									<span className="font-bold text-[#009C39] text-lg md:text-[18px]">
 										01
 									</span>
-									<h3 className="text-2xl md:text-4xl text-[#3C3B3B]">
-										Solar panel for home.
+									<h3 className="text-2xl md:text-4xl text-[#3C3B3B] font-bold">
+										Painel Solar para casas.
 									</h3>
 									<p className="text-[#737171]">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -214,7 +221,7 @@ export function App() {
 										02
 									</span>
 									<h3 className="text-2xl md:text-4xl text-[#3C3B3B]">
-										Solar panel for home.
+										Painel Solar para comércios.
 									</h3>
 									<p className="text-[#737171]">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -238,7 +245,7 @@ export function App() {
 										03
 									</span>
 									<h3 className="text-2xl md:text-4xl text-[#3C3B3B]">
-										Solar panel for home.
+										Solar panel para Zona
 									</h3>
 									<p className="text-[#737171]">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -313,15 +320,15 @@ export function App() {
 									Rua João Feliciano Filho, 370
 								</p>
 								<div className="w-full border flex gap-4">
-									<div className="bg-[#79CE9F]/10 p-6 rounded-xl flex-1">
+									{/* <div className="bg-[#79CE9F]/10 p-6 rounded-xl flex-1">
 										<p className="font-bold text-sm md:text-xl mb-2">
 											+ de 100 projetos instalados
 										</p>
-									</div>
+									</div> */}
 
 									<div className="bg-[#79CE9F]/10 p-6 rounded-xl flex-1">
-										<p className="font-bold text-sm md:text-xl mb-2">
-											Atendemos na Paraíba, Recife, Rio Grande do Norte e região{" "}
+										<p className="font-semibold text-sm md:text-base mb-2">
+											Atendemos na Paraíba, Recife, Rio Grande do Norte e região
 										</p>
 									</div>
 
