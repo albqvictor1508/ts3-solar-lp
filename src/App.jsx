@@ -235,13 +235,12 @@ export function App() {
 										01
 									</span>
 									<h3 className="text-2xl md:text-4xl lg:text-5xl text-[#3C3B3B] font-bold">
-										Painel Solar para casas.
+										Economia Financeira.
 									</h3>
 									<p className="text-[#737171]">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Quos eveniet, rerum sequi animi quisquam ipsa amet
-										perspiciatis molestiae atque ut praesentium porro architecto
-										a? Cum ab aliquam repellendus vero!
+										Reduza significativamente a conta de luz e obtenha um rápido
+										retorno do investimento com a diminuição dos custos
+										operacionais.
 									</p>
 								</div>
 							</div>
@@ -259,13 +258,12 @@ export function App() {
 										02
 									</span>
 									<h3 className="text-2xl md:text-4xl lg:text-5xl text-[#3C3B3B] font-bold">
-										Painel Solar para comércios.
+										Sustentabilidade Ambiental.
 									</h3>
 									<p className="text-[#737171]">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Quos eveniet, rerum sequi animi quisquam ipsa amet
-										perspiciatis molestiae atque ut praesentium porro architecto
-										a? Cum ab aliquam repellendus vero!
+										Contribua para a preservação do meio ambiente usando uma
+										fonte limpa e renovável, que reduz a emissão de CO₂ e
+										minimiza o impacto ambiental.
 									</p>
 								</div>
 							</div>
@@ -283,13 +281,11 @@ export function App() {
 										03
 									</span>
 									<h3 className="text-2xl md:text-4xl lg:text-5xl text-[#3C3B3B] font-bold">
-										Painéis Solares para Zona Rural
+										Autonomia Energética e Valorização do Imóvel.
 									</h3>
 									<p className="text-[#737171]">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Quos eveniet, rerum sequi animi quisquam ipsa amet
-										perspiciatis molestiae atque ut praesentium porro architecto
-										a? Cum ab aliquam repellendus vero!
+										Garante independência da rede elétrica, protege contra
+										reajustes tarifários e aumenta o valor do seu imóvel.
 									</p>
 								</div>
 							</div>
