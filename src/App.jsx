@@ -32,11 +32,7 @@ export function App() {
 		<div className="overflow-x-hidden">
 			<header className="w-full bg-white fixed border-b border-gray-300 z-20">
 				<nav className="w-full flex justify-between items-center rounded-xl px-4 md:px-8 lg:px-12 py-2">
-					<img
-						src={ts3Logo01}
-						alt="logo TS3"
-						className="w-28 md:w-36 lg:w-40"
-					/>
+					<img src={ts3Logo01} alt="logo TS3" className="w-28 md:w-36" />
 
 					<button
 						type="button"
@@ -100,10 +96,9 @@ export function App() {
 								Cansado de pagar contas altíssimas de energia?
 							</h1>
 							<p className="text-base md:text-base lg:text-lg text-[#737171] leading-6 max-w-full md:max-w-[600px] lg:max-w-[700px]">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-								esse nostrum voluptatem repudiandae pariatur nemo sed,
-								voluptatum similique quam distinctio vero illum nesciunt eius
-								dignissimos blanditiis, animi voluptates.
+								Imagine uma vida sem surpresas na conta de energia. Com nossos
+								sistemas solares, você controla seus gastos e contribui para um
+								futuro sustentável.
 							</p>
 							<div className="flex gap-4">
 								<button

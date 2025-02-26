@@ -42,6 +42,13 @@ export function ClientsCard() {
 							className="object-cover w-full h-full"
 						/>
 					</div>
+					<div className="min-w-[200px] md:min-w-[300px] h-[200px] md:h-[300px] overflow-hidden rounded-2xl mx-2 md:mx-4">
+						<img
+							src={isabelCliente03}
+							alt=""
+							className="object-cover w-full h-full"
+						/>
+					</div>
 				</div>
 			</Marquee>
 		</div>
