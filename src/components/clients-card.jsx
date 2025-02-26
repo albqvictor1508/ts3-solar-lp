@@ -2,6 +2,7 @@ import Marquee from "react-fast-marquee";
 import isabelCliente01 from "../assets/ts3-images/isabel-cliente-01.png";
 import isabelCliente02 from "../assets/ts3-images/isabel-cliente-02.png";
 import isabelCliente03 from "../assets/ts3-images/isabel-cliente-03.png";
+import isabelCliente04 from "../assets/ts3-images/isabel-cliente-4.jpeg";
 
 export function ClientsCard() {
 	return (
@@ -44,7 +45,7 @@ export function ClientsCard() {
 					</div>
 					<div className="min-w-[200px] md:min-w-[300px] h-[200px] md:h-[300px] overflow-hidden rounded-2xl mx-2 md:mx-4">
 						<img
-							src={isabelCliente03}
+							src={isabelCliente04}
 							alt=""
 							className="object-cover w-full h-full"
 						/>
