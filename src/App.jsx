@@ -171,15 +171,14 @@ export function App() {
 							<div className="bg-white p-6 shadow flex flex-col space-y-6">
 								<div className="flex gap-4 items-center">
 									<div className="px-2 py-1 rounded-md text-xl font-bold bg-[#E1FFEE]">
-										<i className="bx bx-sun" />
+										<i class="bx bx-home" />
 									</div>
 									<h2 className="text-2xl font-bold text-[#3C3B3B]">Casas</h2>
 								</div>
-								<p className="text-sm text-[#737171]">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Quaerat eum quia cum ratione temporibus repudiandae
-									doloremque, cumque vitae corrupti asperiores ipsam corporis
-									sequi architecto nisi aliquam, iste possimus ut voluptatum?
+								<p className="text-sm text-justify text-[#737171]">
+									Transforme sua casa com sustentabilidade. Reduza a conta de
+									luz e valorize seu imóvel. Pequenas mudanças, grandes
+									resultados!
 								</p>
 							</div>
 
@@ -192,28 +191,24 @@ export function App() {
 										Comércios
 									</h2>
 								</div>
-								<p className="text-sm text-[#737171]">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Quaerat eum quia cum ratione temporibus repudiandae
-									doloremque, cumque vitae corrupti asperiores ipsam corporis
-									sequi architecto nisi aliquam, iste possimus ut voluptatum?
+								<p className="text-pretty text-justify text-sm text-[#737171]">
+									Reduza custos e fortaleça a imagem do seu empreendimento com
+									energia limpa. Projetos personalizados com rápido retorno.
 								</p>
 							</div>
 
 							<div className="bg-white p-6 shadow flex flex-col space-y-6">
 								<div className="flex gap-4 items-center">
 									<div className="px-2 py-1 rounded-md text-xl font-bold bg-[#E1FFEE]">
-										<i className="bx bx-sun" />
+										<i class="bx bx-leaf" />
 									</div>
 									<h2 className="text-2xl font-bold text-[#3C3B3B]">
 										Zona Rural
 									</h2>
 								</div>
-								<p className="text-sm text-[#737171]">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Quaerat eum quia cum ratione temporibus repudiandae
-									doloremque, cumque vitae corrupti asperiores ipsam corporis
-									sequi architecto nisi aliquam, iste possimus ut voluptatum?
+								<p className="text-sm text-justify text-[#737171]">
+									Aproveite autonomia e estabilidade em áreas rurais. Energia
+									sustentável para impulsionar seu agronegócio.
 								</p>
 							</div>
 						</div>
