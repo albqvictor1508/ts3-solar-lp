@@ -12,35 +12,31 @@ export function ProductsSection() {
 		{
 			id: "1",
 			title: "Placa Solar",
-			text: `
-A placa solar traz economia de até 95% na conta de luz, com retorno do investimento em 5 a 7 anos, além de valorizar o imóvel em até 8%. Para adquirir, você deve contratar a TS3 para uma avaliação do consumo e viabilidade. Após a análise, é criado um projeto e definido o orçamento. Em seguida, profissionais certificados realizam a instalação e a integração à rede elétrica. Um investimento que une economia financeira, segurança energética, valorização do imóvel e benefícios ambientais por décadas, reduzindo a pegada de carbono com energia limpa e sustentável.
-			`,
+			text: "Economize até 95% na conta de luz com retorno do investimento em 5-7 anos. Instalação profissional pela TS3 com projeto personalizado. Valorize seu imóvel e reduza emissões de carbono com energia limpa por décadas.",
 			img: <img src={solarPlatePhoto} alt="Placa Solar" />,
 		},
 		{
 			id: "2",
 			title: "Câmera Mibo Intelbras",
-			text: "A Câmera Mibo Intelbras é perfeita para monitoramento interno, oferecendo segurança e praticidade. Com visão noturna, detecção de movimento e áudio bidirecional, ela permite acompanhar tudo em tempo real pelo smartphone. Conectada via Wi-Fi, é fácil de instalar e controlar, ideal para residências ou pequenos negócios que buscam proteção e tranquilidade com um equipamento compacto e eficiente.",
-
+			text: "Monitoramento interno inteligente com visão noturna, detecção de movimento e áudio bidirecional. Instalação simples via Wi-Fi para segurança residencial ou empresarial 24h.",
 			img: <img src={cameraMiboPhoto} alt="Câmera Mibo" />,
 		},
 		{
 			id: "3",
 			title: "Antena Vivensis",
-			text: "A placa solar traz economia de até 95% na conta de luz, com retorno do investimento em 5 a 7 anos, além de valorizar o imóvel em até 8%. Para adquirir, você deve contratar a TS3 para uma avaliação do consumo e viabilidade. Após a análise, é criado um projeto e definido o orçamento. Em seguida, profissionais certificados realizam a instalação e a integração à rede elétrica. Um investimento que une economia financeira, segurança energética, valorização do imóvel e benefícios ambientais por décadas, reduzindo a pegada de carbono com energia limpa e sustentável.",
-
+			text: "Solução profissional para redes wireless de longo alcance. Ideal para conexão estável em áreas extensas com alta performance em ambientes desafiadores.",
 			img: <img src={antenaVivensisPhoto} alt="Antena Vivensis" />,
 		},
 		{
 			id: "4",
 			title: "Automatizador de Portões Intelbras",
-			text: "O Automatizador de Portões traz praticidade e segurança ao automatizar a abertura e fechamento de portões deslizantes ou basculantes. Controlado por controle remoto, teclado ou até pelo smartphone, ele inclui sensores de segurança para evitar acidentes. Ideal para quem busca comodidade e proteção, ele transforma o acesso à garagem ou ao portão em uma experiência rápida, segura e moderna.",
+			text: "Controle remoto de portões com segurança integrada. Compatível com diversos modelos, inclui sensores anti-colisão e opção de integração com smartphones.",
 			img: <img src={automatizadorPortao} alt="Automatizador de Portão" />,
 		},
 		{
 			id: "5",
 			title: "Câmera Externa Intelbras",
-			text: "Projetada para ambientes externos, a Câmera Externa Intelbras é resistente às intempéries e oferece alta durabilidade. Com visão noturna em infravermelho, gravação em HD e alertas inteligentes, ela garante monitoramento preciso 24 horas por dia. Compatível com gravação em nuvem ou local, é uma solução robusta para proteger perímetros, garagens ou áreas externas de residências e empresas.",
+			text: "Vigilância perimetral resistente com visão noturna em HD. Ideal para monitorar áreas externas 24h com alertas inteligentes e gravação em nuvem.",
 			img: <img src={cameraExternaPhoto} alt="Câmera Externa" />,
 		},
 	];
@@ -59,20 +55,23 @@ A placa solar traz economia de até 95% na conta de luz, com retorno do investim
 				>
 					{data.map((product) => (
 						<SwiperSlide key={product.id} className="pb-12">
-							<div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8">
-
-								<div className="flex flex-col space-y-4 py-12 max-w-full md:max-w-[600px]">
-									<h2 className="text-3xl md:text-5xl font-bold mb-6 p-4 text-[#3C3B3B]">
+							<div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-8">
+								<div className="flex flex-col space-y-4 py-12 max-w-full lg:max-w-[600px]">
+									<h2 className="text-3xl lg:text-5xl font-bold mb-6 px-4 lg:p-4 text-[#3C3B3B]">
 										{product.title}
 									</h2>
-									<p className="w-full md:w-[500px] text-justify p-4 text-[#3C3B3B]">
-										{product.text}
-									</p>
+									<div className="flex flex-col space-y-2">
+										<p className="w-full lg:w-[500px] text-justify px-4 text-[#3C3B3B]">
+											{product.p1 ? product.p1 : product.text}
+										</p>
+										<p className="w-full lg:w-[500px] text-justify px-4 text-[#3C3B3B]">
+											{product.p2 ? product.p2 : ""}
+										</p>
+									</div>
 								</div>
-								<div className="flex w-full md:w-auto h-auto md:p-4">
+								<div className="flex w-full lg:w-auto h-auto lg:p-4">
 									{product.img}
 								</div>
-
 							</div>
 						</SwiperSlide>
 					))}
