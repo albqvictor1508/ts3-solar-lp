@@ -1,6 +1,7 @@
 import undrawPc from "./assets/undraw-pc.svg";
 import intelbrasLogo from "./assets/intelbras-logo.svg";
 import ts3Logo01 from "./assets/ts3-images/ts3-solar-logo-01.png";
+import ts3Logo02 from "./assets/ts3-solar-logo.svg";
 import skyLogo from "./assets/sky-logo.svg";
 import vivensisLogo from "./assets/traced-vivensis-logo.svg";
 import frenteTS3 from "./assets/ts3-images/frente-ts3-solar.jpg";
@@ -345,7 +346,7 @@ export function App() {
 									/>
 								</div>
 								<p className="text-right text-sm text-[#555] mt-2">
-									📍 Rua João Feliciano Filho, 370
+									📍 Casa do carai, 666
 								</p>
 								<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 									<div className="bg-gradient-to-br from-[#01AB55]/10 to-[#01AB55]/5 p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -377,37 +378,44 @@ export function App() {
 					</div>
 				</section>
 
-				<footer>
-					<div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-10 px-4 md:px-8 lg:px-12">
-						<div>
+				<footer className="bg-gray-100">
+					<div className="container mx-auto px-4 md:px-8 lg:px-12 py-10">
+						<div className="flex flex-col items-center">
 							<img
-								src="./img/ts3-solar-logo.svg"
+								src={ts3Logo02}
 								alt="ts3 solar logo"
-								className="w-32 md:w-56 lg:w-64"
+								className="w-32 md:w-56 lg:w-64 mb-6"
 							/>
-						</div>
-						<div className="flex flex-col space-y-4">
-							<div className="flex flex-col md:flex-row gap-8 lg:gap-12">
-								<ul className="flex flex-col gap-2">
-									<li className="text-sm text-white font-bold">PRODUTO</li>
-									<li className="text-[#3C3B3B] cursor-pointer">
-										<a className="font-medium" href="#solar-plate-section">
+							<div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 lg:gap-12">
+								<ul className="text-center">
+									<li className="text-sm font-bold text-green-50">PRODUTO</li>
+									<li className="mt-2">
+										<a
+											className="font-medium text-[#3C3B3B] hover:underline"
+											href="#solar-plate-section"
+										>
 											Sobre e Preços
 										</a>
 									</li>
 								</ul>
-								<ul className="flex flex-col gap-2">
-									<li className="text-sm text-white font-bold">EMPRESA</li>
-									<li className="text-[#3C3B3B] cursor-pointer">
-										<a className="font-medium" href="#location-section">
+								<ul className="text-center">
+									<li className="text-sm font-bold text-green-50">EMPRESA</li>
+									<li className="mt-2">
+										<a
+											className="font-medium text-[#3C3B3B] hover:underline"
+											href="#location-section"
+										>
 											Sobre nós
 										</a>
 									</li>
 								</ul>
-								<ul className="flex flex-col gap-2">
-									<li className="text-sm text-white font-bold">CONTATO</li>
-									<li className="text-[#3C3B3B] cursor-pointer">
-										<a className="font-medium" href="#hero-section">
+								<ul className="text-center">
+									<li className="text-sm text-green-50 font-bold">CONTATO</li>
+									<li className="mt-2">
+										<a
+											className="font-medium text-[#3C3B3B] hover:underline"
+											href="#hero-section"
+										>
 											Contate-nos
 										</a>
 									</li>
